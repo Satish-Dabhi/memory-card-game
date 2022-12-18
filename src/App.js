@@ -1,25 +1,11 @@
-import logo from './logo.svg';
+import { Grid } from '@mui/material';
+import { useState } from 'react';
+import { Flippy, FrontSide, BackSide } from 'react-flippy';
 import './App.css';
+import cardList from "./cardList.json";
+import FlipGameContainers from './components/FlipGameContainers';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  return <FlipGameContainers cards={cardList} />;
 }
 
-export default App;
