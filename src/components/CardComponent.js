@@ -9,7 +9,7 @@ class CardComponent extends React.Component {
         } = this.props;
 
         return (
-            <div className="card col-md-3">
+            <div className="card col-3">
                 <Flippy
                     className="flippyContainer"
                     // style={{ display: "block", width: "83px", height: "140px" }}
